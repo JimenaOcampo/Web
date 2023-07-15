@@ -1,53 +1,45 @@
 
 
 /*-------------------MAIN-GIFTCARD---------------------------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Yanone+Kaffeesatz&display=swap');
-
-
 
 
 .fondo1{
-    background-image: url(img/gif1.jpg);
+    background-image: url(../img/gif1.jpg);
 }
 .fondo2{
-    background-image: url(img/gif2.jpg);
+    background-image: url(../img/gif2.jpg);
 }
 .fondo3{
-    background-image: url(img/gif3.jpg);
+    background-image: url(../img/gif3.jpg);
 }
 .fondo4{
-    background-image: url(img/gif4.jpg);
+    background-image: url(../img/gif4.jpg);
 }
 .fondo5{
-    background-image: url(img/gif5.jpg);
+    background-image: url(../img/gif5.jpg);
 }
 .fondo6{
-    background-image: url(img/gif6.jpg);
+    background-image: url(../img/gif6.jpg);
 }
 
 
-/*
+
 .contenedor2{
     margin: 1em 0;
 }
 .contenedor2{
     margin-bottom: 0.3em;
-}*/
-.contenedor2{
-    display: flex;
-    justify-content: space-between;
 }
-.contenedor2 article{
-   width: 350px;
-   height: 350px;
-}
+
 .texto{
     text-align: center;
 }
 .vista-previa{
-    background-color: #ccc;
+    background-color: #ffffff;
     display: flex;
     align-items: center;
+    width: 350px;
+    height: 350px;
 }
 
 
@@ -71,6 +63,8 @@
 
 }
 
+
+
 .contenedor1{
 display: flex;
 flex-direction: column;
@@ -89,19 +83,19 @@ margin-right: 50px;
 }
 .contenedor2{
     display: flex;
+    width: 100%;
     position: relative;
     margin-left: 50px;
-    width: 100%;
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: flex-start;
-
+    justify-content: center;
 }
 .rosa{
     background-color: rgb(120, 0, 108);
     color: rgb(120, 0, 108);
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
     border-radius: 100%;
     margin-bottom: 10px;
 
@@ -109,16 +103,16 @@ margin-right: 50px;
 .negro{
     background-color: black;
     color: black;
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
     border-radius: 100%;
     margin-bottom: 10px;
 }
 .blanco{
     background-color: rgb(255, 255, 255);
     color: rgb(255, 255, 255);
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
     border-radius: 100%;
     border: solid black 1px;
     margin-bottom: 10px;
@@ -126,19 +120,22 @@ margin-right: 50px;
 .azul{
     background-color: rgb(8, 0, 55);
     color:  rgb(8, 0, 55);
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
     border-radius: 100%;
     margin-bottom: 10px;
 }
 .bordo{
     background-color: rgb(56, 7, 7);
     color: rgb(56, 7, 7);
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
     border-radius: 100%;
     margin-bottom: 10px;
 }
+
+
+
 .contenedor-de-colores{
     display: flex;
     width: 50%;
