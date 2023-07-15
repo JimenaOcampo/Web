@@ -1,13 +1,188 @@
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+/*-------------------MAIN-GIFTCARD---------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Yanone+Kaffeesatz&display=swap');
+
+
+
+
+.fondo1{
+    background-image: url(img/gif1.jpg);
+}
+.fondo2{
+    background-image: url(img/gif2.jpg);
+}
+.fondo3{
+    background-image: url(img/gif3.jpg);
+}
+.fondo4{
+    background-image: url(img/gif4.jpg);
+}
+.fondo5{
+    background-image: url(img/gif5.jpg);
+}
+.fondo6{
+    background-image: url(img/gif6.jpg);
+}
+
+
+/*
+.contenedor2{
+    margin: 1em 0;
+}
+.contenedor2{
+    margin-bottom: 0.3em;
+}*/
+.contenedor2{
+    display: flex;
+    justify-content: space-between;
+}
+.contenedor2 article{
+   width: 350px;
+   height: 350px;
+}
+.texto{
+    text-align: center;
+}
+.vista-previa{
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+}
+
+
+/*------------------------------------------------*/
+.fondito{
+    background-color: rgba(255, 6, 176, 0.101);
+}
+.conte-completo-gf{
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 45px;
+    margin-bottom: 190px;
+    text-align: center;
+    position: relative;
+    flex-wrap: wrap;
+    align-content: stretch;
 
 }
 
-/*-------------------MAIN-GIFTCARD---------------------------------------*/
+.contenedor1{
+display: flex;
+flex-direction: column;
+position: relative;
+margin-right: 50px;
 
+}
+.contenedor-de-gifcard{
+    width: 350px;
+    height: 350px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    box-shadow: 22px 23px 49px 0px rgba(8,0,13,0.91);
+    margin-bottom: 80px;
+
+}
+.contenedor2{
+    display: flex;
+    position: relative;
+    margin-left: 50px;
+    width: 100%;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+.rosa{
+    background-color: rgb(120, 0, 108);
+    color: rgb(120, 0, 108);
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    margin-bottom: 10px;
+
+}
+.negro{
+    background-color: black;
+    color: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    margin-bottom: 10px;
+}
+.blanco{
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    border: solid black 1px;
+    margin-bottom: 10px;
+}
+.azul{
+    background-color: rgb(8, 0, 55);
+    color:  rgb(8, 0, 55);
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    margin-bottom: 10px;
+}
+.bordo{
+    background-color: rgb(56, 7, 7);
+    color: rgb(56, 7, 7);
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    margin-bottom: 10px;
+}
+.contenedor-de-colores{
+    display: flex;
+    width: 50%;
+    margin-bottom: 10px;
+}
+.contenedor-de-tamaño{
+    display:flex;
+    width: 50%;
+    margin-bottom: 10px;
+}
+.tamaño{
+    margin-bottom: 10px;
+}
+.monto-imput{
+    margin-bottom: 10px;
+}
+.contenedor-posicion{
+    display: flex;
+    width: 50%;
+
+}
+.colorr{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    margin-bottom: 20px;
+
+}
+.columna-posicion-ubicacion{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+   
+}
+.tamaño-img-posi{
+    width: 5em;
+    margin: 10px;
+   
+}
+.boton-confirmar{
+    margin-bottom: 10px;
+}
 
 
 
@@ -48,7 +223,7 @@
 
 /*-------------------------MAIN---------CALENDARIO--------------------------------------*/
 
-.contenedor-calendario{
+.contenedor-calendario {
     width: 90%;
     margin: 1em auto;
     color: pink;
@@ -81,7 +256,7 @@ button:not(:disabled) {
 .portada-tamaño {
     width: 70%;
     position: absolute;
-    
+
 
 }
 
@@ -155,50 +330,54 @@ button {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+    width: 100%;
 
 
 }
 
 .contenedor-cuadrito {
-    width: 237px;
-    height: 294px;
+    width: 275px;
+    height: 350px;
     border: solid black 2px;
     border-radius: 20px 0px 30px;
-    /* -webkit-box-shadow: 8px 11px 18px 0px rgba(190, 170, 207, 1); */
-    -moz-box-shadow: 8px 11px 18px 0px rgba(190, 170, 207, 1);
+
     box-shadow: 8px 11px 18px 0px rgba(190, 170, 207, 1);
     margin: 20px;
     padding: 20px;
-    background-color: rgb(249, 204, 249);
+    background-color: rgb(152, 106, 175);
     position: relative;
 }
 
 .contenedor-img-cuadrito {
-    width: 120px;
-    height: 120px;
+    width: 230px;
+    height: 230px;
     border-radius: 20px 0px 30px;
+    max-width: 100%;
+
+
 
 }
-.duracion{
+
+.duracion {
     margin: 1px;
     font-family: fantasy;
 }
 
 .precio- {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size:small;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-large;
     display: inline-block;
-    color: aliceblue;
+    color: #f3ff00;
     position: absolute;
     background-color: rgb(0, 0, 0);
-    border-radius: 5px;
-    top: 120px;
-
+    border-radius: 5px 0px;
+    top: 16px;
+    left: 5px;
 }
 
 .contenedor-informacion-cuadrito {
-    width: 100px;
-    height: 100px;
+ 
+    position: relative;
     margin: 5px;
     font-size: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -210,24 +389,29 @@ button {
     display: block;
     text-align: right;
     margin: 10px 0px 5px 0px;
-    color: rgb(80, 0, 209);
+    color: rgb(255, 255, 255);
 
 }
-.tex-curso{
+
+.tex-curso {
     text-align: center;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 40px;
-    
-}
-.tex-curso-{
-    text-align: center;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
- font-size: 30px;
-    
+
 }
 
-.hh5{
-    display: inline-block;
-    font-size: small;
-    font-family: cursive;
+.tex-curso- {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+
 }
+
+.hh5 {
+    display: inline-block;
+    font-family: cursive;
+    font-size: 15px;
+
+
+}
+

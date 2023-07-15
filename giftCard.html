@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
     <title>Cursos Estetica Canina</title>
 
     <link rel="stylesheet" href="css/estilo-todas-las-pag.css">
@@ -12,7 +18,7 @@
 
 </head>
 
-<body>
+<body class="fondito">
     <!--primeralinea logo carro-->
     <header class="contenedor-buscador">
         <article class="contenedor-log-bu-ca">
@@ -44,127 +50,180 @@
         </ul>
     </nav>
     <main>
-        <section>
+        <section class="conte-completo-gf">
+
+
+
             <!--imagen-->
-            <article>
-                <div class="contenedor-de-gifcard">
 
-                    <div class="caja-modificable">
+            <article class="vista-previa">
+                <p id="texto"></p>
+            </article>
 
-                        <div class="dentro-de-tarjeta">
-                            <p class="precio-gif">$0000.-</p>
-                            <h6>GIFCARD para</h6>
-                            <h1>Destinatario</h1>
+
+
+
+            <!--presonalizacion-->
+            <form action="">
+                <article class="contenedor2">
+
+                    <div class="contenedor2">
+                        <h4 class="colorr">Personalizacion de la GiftCard</h4>
+
+                        <!--nombre del destinatario-->
+                        <div class="ppp">
+                            <input type="text" id="nombre" name="nombre" placeholder="Nombre Del Destinatario...">
                         </div>
 
                     </div>
-                    <div>
-                        <p>VISTA PREVIA DE RESULTADO DE PERSONALIZACION</p>
+
+                    <div class="contenedor2">
+                        <h5 class="colorr">Color</h5>
+
+                        <div class="contenedor-de-colores">
+
+                            <div class="columna-posicion-ubicacion">
+
+                                <label class="rosa" for="color">.</label>
+                                <input  type="radio" name="text" value="1" checked>
+                            </div>
+
+                            <div class="columna-posicion-ubicacion">
+
+                                <label class="negro" for="color">.</label>
+                                <input  type="radio" name="text" value="2" checked>
+                            </div>
+                            <div class="columna-posicion-ubicacion">
+
+                                <label class="blanco" for="color">.</label>
+                                <input  type="radio" name="text" value="3" checked>
+                            </div>
+                            <div class="columna-posicion-ubicacion">
+
+                                <label class="azul" for="color">.</label>
+                                <input  type="radio" name="text" value="4" checked>
+                            </div>
+                            <div class="columna-posicion-ubicacion">
+
+                                <label class="bordo" for="color">.</label>
+                                <input  type="radio" name="text" value="5" checked>
+                            </div>
+
+                        </div>
                     </div>
 
-                </div>
+                    <div class="contenedor2">
 
-            </article>
-            <!--presonalizacion-->
-            <article>
-                <h4>Personalizacion de la GiftCard</h4>
+                        <h5 class="colorr">Tamaño de fuente</h5>
 
-                <div>
-                    <input type="text" placeholder="Nombre Del Destinatario...">
-                </div>
+                        <div class="contenedor-de-tamaño">
+                            <div class="columna-posicion-ubicacion">
+                                <p class="tamaño"> 20px</p>
+                                <input  type="radio" name="tamaño" value="1" checked>
+                            </div>
 
-                <h5>Color</h5>
+                            <div class="columna-posicion-ubicacion">
+                                <p class="tamaño"> 28px</p>
+                                <input  type="radio" name="tamaño" value="2" checked>
+                            </div>
 
-                <div class="contenedor-de-colores">
-                    <p class="rosa"> </p>
-                    <input id="color" type="radio" name="rosa" value="" checked>
+                            <div class="columna-posicion-ubicacion">
+                                <p class="tamaño">32px </p>
+                                <input  type="radio" name="tamaño" value="3" checked>
 
-                    <p class="marron"> </p>
-                    <input id="color" type="radio" name="rosa" value="" checked>
+                            </div>
 
-                    <p class="azul"> </p>
-                    <input id="color" type="radio" name="rosa" value="" checked>
+                            <div class="columna-posicion-ubicacion">
+                                <p class="tamaño"> 48px</p>
+                                <input  type="radio" name="tamaño" value="4" checked>
+                            </div>
 
-                    <p class="celeste"> </p>
-                    <input id="color" type="radio" name="rosa" value="" checked>
+                            <div class="columna-posicion-ubicacion">
+                                <p class="tamaño"> 60px</p>
+                                <input  type="radio" name="tamaño" value="5" checked>
+                            </div>
 
-                    <p class="verde"> </p>
-                    <input id="color" type="radio" name="rosa" value="" checked>
-
-                    <p class="naranja"> </p>
-                    <input id="color" type="radio" name="rosa" value="" checked>
-                </div>
-
-                <h5>Tamaño de fuente</h5>
-
-                <div class="contenedor-de-tamaño">
-                    <p class="tamaño"> 20px</p>
-                    <input id="color" type="radio" name="rosa" value="" checked>
-
-                    <p class="tamaño"> 28px</p>
-                    <input id="color" type="radio" name="rosa" value="" checked>
-
-                    <p class="tamaño">32px </p>
-                    <input id="color" type="radio" name="rosa" value="" checked>
-
-                    <p class="tamaño"> 48px</p>
-                    <input id="color" type="radio" name="rosa" value="" checked>
-
-                    <p class="tamaño"> 60px</p>
-                    <input id="color" type="radio" name="rosa" value="" checked>
-                </div>
-
-                <div class="monto-imput">
-                    <h5>Monto $ </h5>
-                    <input type="text" placeholder="¿de cuanto es tu GitfCard">
-                </div>
-                <h5>Ubicación</h5>
-                <div class="contenedor-posicion">
-
-                    <div class="columna-posicion-ubicacion">
-                        <img class="tamaño-img-posi" src="img/arriba.png" alt="arriba">
-                        <input id="arriba" type="radio" name="arriba" value="" checked>
+                        </div>
                     </div>
 
-                    <div class="columna-posicion-ubicacion">
-                        <img class="tamaño-img-posi" src="img/abajo.png" alt="abajo">
-                        <input id="abajo" type="radio" name="abajo" value="" checked>
+                    <div class="contenedor2">
+
+                        <h5 class="colorr">Monto $ </h5>
+
+                        <div class="monto-imput">
+
+                            <input type="text" placeholder="¿De cuanto es tu GitfCard?...">
+                        </div>
+
+
+                        <h5 class="colorr">Ubicación</h5>
+
+                        <div class="contenedor-posicion">
+
+                            <div class="columna-posicion-ubicacion">
+                                <img class="tamaño-img-posi" src="img/arriba.jpg" alt="posi">
+                                <input id="arriba" type="radio" name="posi" value="1" checked>
+                            </div>
+
+                            <div class="columna-posicion-ubicacion">
+                                <img class="tamaño-img-posi" src="img/abajo.jpg" alt="posi">
+                                <input id="abajo" type="radio" name="posi" value="2" checked>
+                            </div>
+
+                            <div class="columna-posicion-ubicacion">
+                                <img class="tamaño-img-posi" src="img/arriba dere.jpg" alt="posi">
+                                <input id="arriba-derecha" type="radio" name="posi" value="3" checked>
+
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="columna-posicion-ubicacion">
-                        <img class="tamaño-img-posi" src="img/arriba dere.png" alt="arriba-derecha">
-                        <input id="arriba-derecha" type="radio" name="arriba-derecha" value="" checked>
+                    <div class="contenedor2">
+
+                        <h5 class="colorr">Fondo </h5>
+
+                        <div class="contenedor-de-colores">
+                            <div class="columna-posicion-ubicacion">
+                                <img class="tamaño-img-posi" src="img/gif1.jpg" alt="arriba">
+                                <input  type="radio" name="fondo" value="1" checked>
+                            </div>
+                            <div class="columna-posicion-ubicacion">
+                                <img class="tamaño-img-posi" src="img/gif2.jpg" alt="arriba">
+                                <input type="radio" name="fondo" value="2" checked>
+                            </div>
+                            <div class="columna-posicion-ubicacion">
+                                <img class="tamaño-img-posi" src="img/gif3.jpg" alt="arriba">
+                                <input type="radio" name="fondo" value="3" checked>
+                            </div>
+                            <div class="columna-posicion-ubicacion">
+                                <img class="tamaño-img-posi" src="img/gif4.jpg" alt="arriba">
+                                <input type="radio" name="fondo" value="4" checked>
+                            </div>
+                            <div class="columna-posicion-ubicacion">
+                                <img class="tamaño-img-posi" src="img/gif5.jpg" alt="arriba">
+                                <input type="radio" name="fondo" value="5" checked>
+                            </div>
+                            <div class="columna-posicion-ubicacion">
+                                <img class="tamaño-img-posi" src="img/gif6.jpg" alt="arriba">
+                                <input type="radio" name="fondo" value="6" checked>
+                            </div>
+
+                        </div>
                     </div>
-                </div>
-                <h5>Fondo</h5>
-                <div class="contenedor-de-colores">
-                    <p class="Negro"> </p>
-                    <input id="color" type="radio" name="rosa" value="" checked>
 
-                    <p class="gris"> </p>
-                    <input id="color" type="radio" name="rosa" value="" checked>
+                    <div class="boton-confirmar">
+                        <input id="botones" type="submit" value="Confirmar">
+                    </div>
 
-                    <p class="negro"> </p>
-                    <input id="color" type="radio" name="rosa" value="" checked>
+                </article>
 
-                    <p class="bordo"> </p>
-                    <input id="color" type="radio" name="rosa" value="" checked>
-
-                    <p class="caramelo"> </p>
-                    <input id="color" type="radio" name="rosa" value="" checked>
-
-                    <p class="verde"> </p>
-                    <input id="color" type="radio" name="rosa" value="" checked>
-                </div>
-
-                <div class="boton-confirmar">
-                    <input type="submit" value="Confirmar">
-                </div>
-
-            </article>
+            </form>
+            <script src="js/gif.js"></script>
         </section>
 
     </main>
+
+
 
     <!-- ultima linea datos del grupo-->
     <footer>

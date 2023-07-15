@@ -10,6 +10,12 @@
 a {
     cursor: url(../img/mano.png), auto;
 }
+#botones{
+    cursor: url(../img/mano.png), auto;
+}
+input{
+    cursor: url(../img/mano.png), auto;
+}
 
 /*-------------------------------------------------------------------------*/
 
@@ -79,14 +85,14 @@ position: relative;
 .carrito {
     /*no poner position absolut aca*/
     background-color: rgb(250, 114, 164);
-    width: 40px;
-    padding: 9px;
+    width: 60px;
+    padding: 6px;
     border-radius: 15%;
 
 }
 
 .contador {
-    width: 20px;
+    width: 22px;
     color: #111;
     background-color: rgb(255, 255, 255);
     border-radius: 50%;
@@ -140,19 +146,14 @@ a {
     display: flex;
     width: 100%;
     margin: 10px;
-    align-items: stretch;
     background-color: rgb(11, 4, 18);
     padding: 28px;
-    position: absolute;
-    flex-direction: row;
-    justify-content: center;
+      
 }
 .datos{
     width: 100%;
     padding: 20px;
-    /* text-align: center; */
     color: chocolate;
-    /* font-size: x-large; */
     font-family: cursive;
     border: solid black 2px;
     border-radius: 30px;
@@ -160,8 +161,4 @@ a {
 }
 .seccion-foter{
     width: 100%;
-}
-.ppp{
-    width: 100%;
-    position: relative;
 }
