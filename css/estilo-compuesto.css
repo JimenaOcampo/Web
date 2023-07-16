@@ -1,87 +1,112 @@
-
-
 /*-------------------MAIN-GIFTCARD---------------------------------------*/
 
 
-.fondo1{
-    background-image: url(../img/gif1.jpg);
-}
-.fondo2{
-    background-image: url(../img/gif2.jpg);
-}
-.fondo3{
-    background-image: url(../img/gif3.jpg);
-}
-.fondo4{
-    background-image: url(../img/gif4.jpg);
-}
-.fondo5{
-    background-image: url(../img/gif5.jpg);
-}
-.fondo6{
-    background-image: url(../img/gif6.jpg);
-}
 
 
 
-.contenedor2{
+.contenedor2 {
     margin: 1em 0;
 }
-.contenedor2{
+
+.contenedor2 {
     margin-bottom: 0.3em;
 }
 
-.texto{
+.texto {
     text-align: center;
 }
-.vista-previa{
+
+.vista-previa {
     background-color: #ffffff;
     display: flex;
     align-items: center;
     width: 350px;
     height: 350px;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    font-size: 35px;
+    font-style: italic;
+    font-weight: 900;
+    box-shadow: 10px 10px 34px -2px rgb(35, 0, 25);
+}
+
+.personalizacion-texto{
+    position: relative;
+    top: -16px;
+    text-shadow: 1px -1px 14px #000;
 }
 
 
-/*------------------------------------------------*/
-.fondito{
-    background-color: rgba(255, 6, 176, 0.101);
+
+.parrafo-final {
+    margin-top: 48px;
+    font-family: fantasy;
+    font-size: 29px;
+    background-color: #f1f1f1;
 }
-.conte-completo-gf{
+
+.gif-para {
+    position: relative;
+    top: -49px;
+}
+.vista-previa-precio{
+    font-family: auto;
+    font-size: 20px;
+    display: inline-block;
+    color: #000000;
+    position: relative;
+    background-color: rgb(255 255 255);
+    /* border-radius: 26px 0px; */
+    top: 45px;
+    left: 198px;
+    width: 42%;
+    /* height: 9%; */
+    text-align: center;
+    /* margin: 10px; */
+    padding: 10px;
+    font-family: fantasy;
+}
+.fondito {
+    background-color: rgba(0, 255, 247, 0.21);
+}
+
+.conte-completo-gf {
     max-width: 100%;
     height: auto;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
+    align-items: stretch;
     margin-top: 45px;
     margin-bottom: 190px;
     text-align: center;
     position: relative;
     flex-wrap: wrap;
-    align-content: stretch;
+    justify-content: center;
 
 }
 
 
 
-.contenedor1{
-display: flex;
-flex-direction: column;
-position: relative;
-margin-right: 50px;
+.contenedor1 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-right: 50px;
 
 }
-.contenedor-de-gifcard{
+
+.contenedor-de-gifcard {
     width: 350px;
     height: 350px;
     background-color: rgb(255, 255, 255);
     padding: 20px;
-    box-shadow: 22px 23px 49px 0px rgba(8,0,13,0.91);
+    box-shadow: 22px 23px 49px 0px rgba(8, 0, 13, 0.91);
     margin-bottom: 80px;
 
 }
-.contenedor2{
+
+.contenedor2 {
     display: flex;
     width: 100%;
     position: relative;
@@ -91,24 +116,26 @@ margin-right: 50px;
     align-items: flex-start;
     justify-content: center;
 }
-.rosa{
-    background-color: rgb(120, 0, 108);
-    color: rgb(120, 0, 108);
+
+.rosa {
+    background-color: rgb(232, 0, 208);
+    color: rgb(232, 0, 208);
     width: 50px;
     height: 50px;
     border-radius: 100%;
     margin-bottom: 10px;
-
+    border: solid black 1px;
 }
-.negro{
+.negro {
     background-color: black;
     color: black;
     width: 50px;
     height: 50px;
     border-radius: 100%;
     margin-bottom: 10px;
-}
-.blanco{
+    border: solid black 1px;}
+
+.blanco {
     background-color: rgb(255, 255, 255);
     color: rgb(255, 255, 255);
     width: 50px;
@@ -117,70 +144,174 @@ margin-right: 50px;
     border: solid black 1px;
     margin-bottom: 10px;
 }
-.azul{
-    background-color: rgb(8, 0, 55);
-    color:  rgb(8, 0, 55);
+
+.azul {
+    background-color: rgb(25, 0, 164);
+    color:  rgb(25, 0, 164);
     width: 50px;
     height: 50px;
     border-radius: 100%;
     margin-bottom: 10px;
+    border: solid black 1px;
 }
-.bordo{
-    background-color: rgb(56, 7, 7);
-    color: rgb(56, 7, 7);
+
+.bordo {
+    background-color: rgb(0, 197, 43);
+    color: rgb(0, 197, 43);
     width: 50px;
     height: 50px;
     border-radius: 100%;
     margin-bottom: 10px;
+    border: solid black 1px;
+}
+
+
+/*CLASES COLORES DE TEXTO PARA JS*/
+
+
+.colorfuente1 {
+    color: rgb(232, 0, 208);
+}
+
+.colorfuente2 {
+    color: black;
+}
+
+.colorfuente3 {
+    color: rgb(255, 255, 255);
+}
+
+.colorfuente4 {
+    color:  rgb(25, 0, 164);
+}
+
+.colorfuente5 {
+    color: rgb(0, 197, 43);
+
+}
+
+/*CLASES POSICIONES DE TEXTO PARA JS*/
+
+.posi1 {
+ 
+}
+
+.posi2 {
+
+}
+
+.posi3 {
+  
 }
 
 
 
-.contenedor-de-colores{
+/*CLASES TAMAÑO DE TEXTO PARA JS*/
+.tamaño1 {
+    font-size: 20px;
+}
+
+.tamaño2 {
+    font-size: 28px;
+}
+
+.tamaño3 {
+    font-size: 32px;
+}
+
+.tamaño4 {
+    font-size: 48px;
+}
+
+.tamaño5 {
+    font-size: 60px;
+}
+
+/*CLASES FONDOS DE TEXTO PARA JS*/
+.fondo1 {
+    background-image: url(../img/gif1.jpg);
+}
+
+.fondo2 {
+    background-image: url(../img/gif2.jpg);
+}
+
+.fondo3 {
+    background-image: url(../img/gif3.jpg);
+}
+
+.fondo4 {
+    background-image: url(../img/gif4.jpg);
+}
+
+.fondo5 {
+    background-image: url(../img/gif5.jpg);
+}
+
+.fondo6 {
+    background-image: url(../img/gif6.jpg);
+}
+
+
+
+.contenedor-de-colores {
     display: flex;
     width: 50%;
     margin-bottom: 10px;
 }
-.contenedor-de-tamaño{
-    display:flex;
+
+.contenedor-de-tamaño {
+    display: flex;
     width: 50%;
     margin-bottom: 10px;
 }
-.tamaño{
+
+.tamaño {
     margin-bottom: 10px;
 }
-.monto-imput{
+
+.monto-imput {
     margin-bottom: 10px;
 }
-.contenedor-posicion{
+
+.contenedor-posicion {
     display: flex;
     width: 50%;
 
 }
-.colorr{
+
+.colorr {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 15px;
     margin-bottom: 20px;
 
 }
-.columna-posicion-ubicacion{
+
+.columna-posicion-ubicacion {
     display: flex;
     width: 50%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
-   
-}
-.tamaño-img-posi{
-    width: 5em;
     margin: 10px;
-   
-}
-.boton-confirmar{
-    margin-bottom: 10px;
+
 }
 
+.tamaño-img-posi {
+    width: 64px;
+ 
+
+}
+
+.boton-confirmar {
+    margin-bottom: 10px;
+}
+#monto{
+   font-size: 20px;
+}
+#nombre{
+    font-size: 20px;
+}
 
 
 
@@ -373,7 +504,7 @@ button {
 }
 
 .contenedor-informacion-cuadrito {
- 
+
     position: relative;
     margin: 5px;
     font-size: 20px;
@@ -411,4 +542,3 @@ button {
 
 
 }
-
