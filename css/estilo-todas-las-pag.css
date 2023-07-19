@@ -7,8 +7,10 @@
     cursor: url(../img/flecha.png), auto;
 }
 
-a {
+a {    
+    text-decoration: none;
     cursor: url(../img/mano.png), auto;
+    
 }
 #botones{
     cursor: url(../img/mano.png), auto;
@@ -133,9 +135,7 @@ position: relative;
 
 }
 
-a {
-    text-decoration: none;
-}
+
 
 /*---------------------------------------------------------------------------------*/
 .info-grupo {

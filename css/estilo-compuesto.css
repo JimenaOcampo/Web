@@ -3,6 +3,7 @@
 .fondito {
     background-color: rgba(0, 255, 247, 0.21);
 }
+
 /*------------------------------*/
 
 
@@ -10,7 +11,7 @@
 /*------------contenedor 1------------------*/
 .texto {
     text-align: center;
-} 
+}
 
 .conte-completo-gf {
     max-width: 100%;
@@ -26,6 +27,7 @@
     justify-content: center;
 
 }
+
 .contenedor1 {
     display: flex;
     flex-direction: column;
@@ -33,11 +35,13 @@
     margin-right: 50px;
 
 }
-.axol{
+
+.axol {
     width: 270px;
     height: 160px;
     margin-top: 30PX;
 }
+
 /*-----------vistaprevia es la gif vacia para modificar-------------------*/
 
 
@@ -58,13 +62,14 @@
 
 
 /*-------------es el texto modificable de la gif-----------------*/
-.personalizacion-texto{
+.personalizacion-texto {
     position: relative;
     top: -16px;
     text-shadow: 1px -1px 14px #000;
 }
+
 /*-----------es el precio modificable de la gif-------------------*/
-.vista-previa-precio{
+.vista-previa-precio {
     font-family: auto;
     font-size: 20px;
     display: inline-block;
@@ -138,6 +143,7 @@
     margin-bottom: 10px;
     border: solid black 1px;
 }
+
 .negro {
     background-color: black;
     color: black;
@@ -145,7 +151,8 @@
     height: 50px;
     border-radius: 100%;
     margin-bottom: 10px;
-    border: solid black 1px;}
+    border: solid black 1px;
+}
 
 .blanco {
     background-color: rgb(255, 255, 255);
@@ -159,7 +166,7 @@
 
 .azul {
     background-color: rgb(25, 0, 164);
-    color:  rgb(25, 0, 164);
+    color: rgb(25, 0, 164);
     width: 50px;
     height: 50px;
     border-radius: 100%;
@@ -176,6 +183,7 @@
     margin-bottom: 10px;
     border: solid black 1px;
 }
+
 .contenedor-de-colores {
     display: flex;
     width: 50%;
@@ -202,11 +210,13 @@
     width: 50%;
 
 }
-.color-titulo{
-     font-family: fantasy;
+
+.color-titulo {
+    font-family: fantasy;
     font-size: 30px;
     margin-bottom: 2px;
 }
+
 .colorr {
     font-family: monospace;
     font-size: 24px;
@@ -227,19 +237,21 @@
 
 .tamaño-img-posi {
     width: 100px;
- 
+
 
 }
 
 .boton-confirmar {
     margin-bottom: 10px;
 }
-#monto{
-   font-size: 26px;
-   padding: 3px;
-   background-color: rgb(199, 171, 234);
+
+#monto {
+    font-size: 26px;
+    padding: 3px;
+    background-color: rgb(199, 171, 234);
 }
-#nombre{
+
+#nombre {
     font-size: 26px;
     background-color: pink;
     padding: 7px;
@@ -263,7 +275,7 @@
 }
 
 .colorfuente4 {
-    color:  rgb(25, 0, 164);
+    color: rgb(25, 0, 164);
 }
 
 .colorfuente5 {
@@ -347,22 +359,22 @@
 /*-----------CLASES FONDOS DE TEXTO PARA JS----------------------*/
 .fondo1 {
     background-image: url(../img/gif1.jpg);
- 
+
 }
 
 .fondo2 {
     background-image: url(../img/gif2.jpg);
- 
+
 }
 
 .fondo3 {
     background-image: url(../img/gif3.jpg);
-  
+
 }
 
 .fondo4 {
     background-image: url(../img/gif4.jpg);
-  
+
 }
 
 .fondo5 {
@@ -525,6 +537,20 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*-------------------------MAIN---------CALENDARIO--------------------------------------*/
 
 .contenedor-calendario {
@@ -584,12 +610,15 @@ button:not(:disabled) {
     transition: opacity .15s ease;
 }
 
+/*------------ver------------------------
+
 [type=button],
 [type=reset],
 [type=submit],
 button {
     -webkit-appearance: button;
 }
+------------------------------------------*/
 
 button,
 select {
@@ -717,4 +746,43 @@ button {
     font-size: 15px;
 
 
+}
+
+/*-------------------------MAIN---------detalle cursao--------------------------------------*/
+
+.punto-medio{
+display: flex;
+
+}
+
+.img-curso {
+
+    margin-right: 27px;
+    padding: 44px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.contenedor-img-inf-curso {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: stretch;
+    width: 30%;
+
+}
+
+.contenedor-detalles-importantes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 47px;
+
+    flex-wrap: nowrap;
 }
