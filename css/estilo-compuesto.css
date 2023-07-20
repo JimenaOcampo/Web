@@ -468,11 +468,11 @@
 }
 
 .lista-principal {
-    background-color: #ffffff;
+    background-color: #c1dfd6;
     font-size: 18px;
     padding: 5px;
     border: 1px solid black;
-
+    list-style: none;
 }
 
 .lista-contenidos {
@@ -516,12 +516,31 @@
     border-radius: 3PX;
 
 }
+.seccion-contenido{
+    display: flex;
+    width: 93%;
+    text-align: start;
+   margin: 45px;
+    margin-bottom: 12%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: space-around;
+    align-items: flex-start;
+}
 
 
+.fondo-detalle{
+    background-color: #f1f1f1;
+}
 
 
-
-
+.ajolote{
+    width: 100%;
+    margin-left: 10%;
+    margin-top: 12%;
+  
+}
 
 
 
@@ -750,15 +769,14 @@ button {
 
 /*-------------------------MAIN---------detalle cursao--------------------------------------*/
 
-.punto-medio{
-display: flex;
+.punto-medio {
+    display: flex;
 
 }
 
 .img-curso {
 
     margin-right: 27px;
-    padding: 44px;
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
@@ -785,4 +803,98 @@ display: flex;
     margin: 47px;
 
     flex-wrap: nowrap;
+}
+
+.TITULO-inf-cur {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    margin-bottom: 20px;
+
+}
+
+.TITULO-inf-cur-cla {
+
+    font-family: fantasy;
+    font-size: 20px;
+    font-style: oblique;
+    margin-bottom: 20px;
+}
+
+.parrafos {
+
+    margin-bottom: 20px;
+    color: #000000;
+    font-family: fantasy;
+    font-size: inherit;
+
+}
+
+.boton-confirmar {
+    background-color: pink;
+    margin-bottom: 30px;
+}
+
+.detalle-profesor {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/img/fondo.jpg);
+    margin-bottom: 67px
+
+}
+
+.titulos1 {
+    margin-bottom: 20px;
+    margin-left: 15%;
+    font-size: 46px;
+
+}
+
+.titulos {
+    margin-bottom: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+
+.estrellitas {
+    margin-bottom: 20px;
+}
+
+.parrofos {
+    padding: 30px;
+}
+
+.contenedor-informacion-profesora {
+    margin: 39px;
+}
+
+.imagen-profesor {
+    margin-left: 5%;
+    width: 250px;
+    height: 150px;
+    border-radius: 100%;
+}
+
+.definicion-ariana {
+    color: #8e0168;
+    background-color: #000000;
+    border: #f3ff00 2px solid;
+    padding: 20px;
+    border-radius: 62px 20px;
+
+}
+.boton-confirmar{
+    margin-top: 20px;
+}
+.infor-curso{
+    margin: 10px;
+    font-family: math;
+    font-variant: small-caps;
+    font-size: 15px;
+}
+.infor-curso1{
+    font-family: fantasy;
 }
