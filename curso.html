@@ -14,6 +14,7 @@
     <title>Cursos peluqueria canina nivel 1</title>
     <link rel="stylesheet" href="css/estilo-todas-las-pag.css">
     <link rel="stylesheet" href="css/estilo-compuesto.css">
+    <link rel="stylesheet" href="css/estrellas.css">
 </head>
 
 <body class="fondo-detalle">
@@ -75,7 +76,7 @@
                         <h2 class="TITULO-inf-cur">CURSO DE PELUQUERIA CANINA NIVEL 1</h2>
                         <div class="parrafito">
                             <p class="infor-curso1">Valor: </p>
-                            <p class="infor-curso">15000.-</p>
+                            <p class="infor-curso">$15000.-</p>
 
                             <p class="infor-curso1">Tiempo de dedicacion:</p>
                             <p class="infor-curso"> 2 horas diarias de practica </p>
@@ -93,14 +94,24 @@
                     <!--botn de inscripcion-->
 
                     <div class="boton-confirmar">
-                        <input id="botones" type="submit" value="Inscribirme">
-                    </div>
+
+                        <button id="botones" type="submit" value="inscribirme"><a
+                                href="formulario.html">Inscribirse</a></button>
+            </article>
+            <!--
+                                <script src="js/contador.js"></script>    
+                -->
+
+            </div>
 
 
 
 
 
-                </div>
+
+
+
+            </div>
 
             </article>
 
@@ -114,23 +125,31 @@
                         <ul>
 
 
-                            <li class="lista-principal">Introduccion</li>
 
 
-                            <ul>
+
+                            <input class="lista-principal" type="button" value="Ver Introduccion" id="cambiar">
+
+
+
+                            <ul id="texto1" class="d-none">
                                 <li class="lista-contenidos">
                                     <a class="video" href="https://www.youtube.com/watch?v=pRecSWeyaSo"
                                         target="_blank">Curso Básico de Peluquería Canina : Paso 1: Corte
                                         Inicial
                                     </a>
-                                    <p class="video">30min</p>
+                                    <p class="video">
+                                        <img src="img/mano.png" alt="">
+                                    </p>
                                 </li>
                                 <li class="lista-contenidos">
                                     <a class="video" href="https://www.youtube.com/watch?v=EMKuFk6O_iQ"
                                         target="_blank">PELUQUERÍA CANINA CORTE DE TRANSICIÓN SHIH TZU CON
                                         NICOLÁS
                                         HERRERO</a>
-                                    <p class="video">30min</p>
+                                    <p class="video">
+                                        <img src="img/mano.png" alt="">
+                                    </p>
                                 </li>
                                 <li class="lista-contenidos">
                                     <a class="video" href="https://www.youtube.com/watch?v=8qkcmUcuUVg"
@@ -138,18 +157,23 @@
                                         Animal
                                         Salut
                                     </a>
-                                    <p class="video">30min</p>
+                                    <p class="video">
+                                        <img src="img/mano.png" alt="">
+                                    </p>
                                 </li>
                             </ul>
 
 
 
-                            <li class="lista-principal">Unidad 2</li>
+
+
+                            <input class="lista-principal" type="button" value=" Ver Unidad-1" id="cambio">
 
 
 
 
-                            <ul>
+
+                            <ul id="texto2" class="d-none">
                                 <li class="lista-contenidos">
                                     <a class="video" href="https://www.youtube.com/watch?v=0f_GLwxwlo4"
                                         target="_blank">¡NO LO RAPES! Cómo CORTAR el PELO a un PERRO con
@@ -157,7 +181,9 @@
                                         en
                                         casa
                                         y HACERLO FELIZ </a>
-                                    <p class="video">30min</p>
+                                    <p class="video">
+                                        <img src="img/mano.png" alt="">
+                                    </p>
                                 </li>
                                 <li class="lista-contenidos">
                                     <a class="video" href="https://www.youtube.com/watch?v=fYduO0O2Gw8"
@@ -165,15 +191,18 @@
                                         por
                                         PRIMERA
                                         VEZ </a>
-                                    <p class="video">30min</p>
+                                    <p class="video">
+                                        <img src="img/mano.png" alt="">
+                                    </p>
                                 </li>
                                 <li class="lista-contenidos">
                                     <a class="video" href="https://www.youtube.com/watch?v=jlvbZWlhUmk"
                                         target="_blank">ARREGLO COMERCIAL POODLE </a>
-                                    <p class="video">30min</p>
+                                    <p class="video">
+                                        <img src="img/mano.png" alt="">
+                                    </p>
                                 </li>
                             </ul>
-
 
 
 
@@ -187,7 +216,7 @@
             </div>
 
             <div>
-                <img class="ajolote" src="img/cute-ajolote.gif" alt="" >
+                <img class="ajolote" src="img/cute-ajolote.gif" alt="">
             </div>
         </section>
 
@@ -199,7 +228,7 @@
 
 
 
-            <img class="imagen-profesor" src="img/arianaGrande.jpg" alt="Ariana Grande">
+            <img class="imagen-profesor" src="img/images-2020-09-15T184359.810.jpeg" alt="Ariana Grande">
 
 
             <article class="contenedor-informacion-profesora">
@@ -207,17 +236,42 @@
                 <h3 class="titulos">Ariana Grande</h3>
 
                 <div class="estrellitas"><!--estrellitas-->
-                    <img src="" alt="estrellas de valoracion">
+                    <form>
+                        <p class="clasificacion">
+                            <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                            --><label for="radio1">★</label><!--
+                            --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+                            --><label for="radio2">★</label><!--
+                            --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                            --><label for="radio3">★</label><!--
+                            --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                            --><label for="radio4">★</label><!--
+                            --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                            --><label for="radio5">★</label>
+                        </p>
+                    </form>
                 </div>
 
                 <div class="parrafos">
-                    <p class="definicion-ariana">Ariana Grande Butera
+                    <p class="definicion-ariana">
+                        Este curso esta patrocinado por Ariana Grande Butera:
+                        <br>
+                        Ariana Grande Butera
                         es una cantante, compositora,
                         empresaria, instrumentista, productora
                         discográfica y actriz estadounidense. Actualmente se dedica a
                         bañar y peinar perritos, es su nueva vocacion y es exelente en
                         lo que hace. Los fondos recaudados con este curso
                         seran dedicados a cuidar a los perritos en situacion de calle.
+                        <br>
+                        <li class="lista-contenidos">
+                            <a class="video" href=" https://www.youtube.com/watch?v=Y_qPEsiPf2c&t=5s"
+                                target="_blank">Pet Lovers: Ariana Grande y su mancha de perros</a>
+
+                            <p class="video">
+                                <img src="img/mano.png" alt="">
+                            </p>
+                        </li>
                     </p>
                 </div>
 
@@ -297,7 +351,7 @@
 
 
     </footer>
-
+    <script src="js/detalle-curso.js"></script>
 </body>
 
 </html>

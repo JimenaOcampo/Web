@@ -1,7 +1,7 @@
 /*-------------------MAIN-GIFTCARD--------------------------------------------------------------------------------------------------*/
 /*--------------body----------------*/
 .fondito {
-    background-color: rgba(0, 255, 247, 0.21);
+    background-color:rgb(147 102 242 / 19%);
 }
 
 /*------------------------------*/
@@ -23,7 +23,7 @@
     margin-bottom: 190px;
     text-align: center;
     position: relative;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
 
 }
@@ -33,7 +33,10 @@
     flex-direction: column;
     position: relative;
     margin-right: 50px;
-
+    /* align-content: flex-end; */
+    flex-wrap: nowrap;
+    align-items: baseline;
+    margin-left: 10%;
 }
 
 .axol {
@@ -49,8 +52,11 @@
     background-color: #ffffff;
     display: flex;
     align-items: center;
-    width: 350px;
-    height: 350px;
+    /*width: 350px;
+    height: 350px;*/
+    width: 470px;
+    height: 470px;
+
     flex-direction: column;
     justify-content: space-around;
     flex-wrap: nowrap;
@@ -78,7 +84,7 @@
     background-color: rgb(255 255 255);
     /* border-radius: 26px 0px; */
     top: 45px;
-    left: 198px;
+    left: 271px;
     width: 42%;
     /* height: 9%; */
     text-align: center;
@@ -122,12 +128,12 @@
     margin-left: 53px;
     flex-wrap: wrap;
     flex-direction: column;
-    align-items: flex-start;
     justify-content: center;
     /* margin: 0em 0; */
     margin-bottom: 0.3em;
-    /* align-content: center; */
+    align-content: flex-start;
     margin-bottom: 10px;
+    align-items: baseline;
 }
 
 
@@ -237,7 +243,7 @@
 
 .tamaño-img-posi {
     width: 100px;
-
+    margin-bottom: 20px;
 
 }
 
@@ -308,7 +314,7 @@
     color: #000000;
     position: relative;
     background-color: rgb(255 255 255);
-    top: 348px;
+    top: 467px;
     left: 2px;
     width: 42%;
     text-align: center;
@@ -325,7 +331,7 @@
     position: relative;
     background-color: rgb(255 255 255);
     top: 45px;
-    left: 203px;
+    /* left: 203px; */
     width: 42%;
     text-align: center;
     padding: 10px;
@@ -395,7 +401,148 @@
 
 
 /*-----------------MAIN---FORMULARIO----------------------------------------------------*/
+.contenedor-formulario {
 
+    padding: 20px;
+    background-color: aliceblue;
+    margin: 30px;
+    border-radius: 2%;
+}
+
+.linea {
+    display: flex;
+    width: 100%;
+    padding-left: 10px;
+    margin-top: 5px;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+
+
+/*cuadros de  nombre apellido dni*/
+.npd {
+    width: 100%;
+    margin: 8px;
+
+}
+
+.casilla {
+
+    height: 30px;
+    border-radius: 15px;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.subtit-formulafio {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.precio-formulario {
+    display: inline;
+    background-color: #000;
+    color: #ffffff;
+    padding: 5px 10px;
+    margin: 0 8px;
+}
+
+.envio-formulario {
+    padding: 3px;
+}
+
+.agrega-campo {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.linea img {
+    width: 30px;
+   
+    margin: 8px;
+}
+.linea1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: space-between;
+
+}
+
+.agrega-campo img {
+    width: 30px;
+    margin: 8px;
+
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.signo-mas{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    margin-left: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #0000ff00;
+    border: none;
+}
+.img-sig-mas{
+    width: 10%;
+}
+.popup d-none{
+    background-color: grey;
+    width: 50%;
+    height: 300px;
+    text-align: center;
+    position: fixed;
+    z-index:2;
+    top:30px;
+    display:none;
+}
+.d-none{
+    display: none;
+}
+
+
+/*js formulario*/
+
+input[type="submit"]{
+    display: block;
+    float: right;
+    padding: 0.5em;
+    margin: 1em;
+}
+input.error{
+    border:1px solid crimson;
+}
+#mensaje{
+    margin-top: 2em;
+}
+#mostrar{
+    padding: 0.5em;
+}
+.oculto{
+    display: none;
+}
+.condiciones{
+    margin-top: 0.5em;
+}
+.color-error{
+    color: crimson;
+}
+#agregar-fila{
+
+}
 
 
 
@@ -473,8 +620,13 @@
     padding: 5px;
     border: 1px solid black;
     list-style: none;
+    display: inline-block;
+    width: 100%;
 }
-
+/*javascrip*/
+.d-none{
+    display: none;
+}
 .lista-contenidos {
 
     background-color: rgb(0, 0, 0);
@@ -485,6 +637,7 @@
     display: flex;
     justify-content: space-between;
     color: #ffffff;
+    
 
 }
 
@@ -516,30 +669,153 @@
     border-radius: 3PX;
 
 }
-.seccion-contenido{
+
+.seccion-contenido {
     display: flex;
-    width: 93%;
-    text-align: start;
-   margin: 45px;
+    width: 87%;
     margin-bottom: 12%;
     flex-direction: row;
     flex-wrap: nowrap;
-
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: center;
+    margin-left: 92px;
 }
 
 
-.fondo-detalle{
+.fondo-detalle {
     background-color: #f1f1f1;
 }
 
 
-.ajolote{
+.ajolote {
     width: 100%;
     margin-left: 10%;
     margin-top: 12%;
-  
+
+}
+
+.punto-medio {
+    display: flex;
+
+}
+
+.img-curso {
+
+    margin-right: 27px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.contenedor-img-inf-curso {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: stretch;
+    width: 30%;
+
+}
+
+.contenedor-detalles-importantes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 47px;
+
+    flex-wrap: nowrap;
+}
+
+.TITULO-inf-cur {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    margin-bottom: 20px;
+
+}
+
+.TITULO-inf-cur-cla {
+
+    font-family: fantasy;
+    font-size: 20px;
+    font-style: oblique;
+    margin-bottom: 20px;
+}
+
+.parrafos {
+
+    margin-bottom: 20px;
+    color: #000000;
+    font-family: fantasy;
+    font-size: inherit;
+
+}
+
+
+
+.detalle-profesor {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/img/fondo.jpg);
+    margin-bottom: 67px
+}
+
+.titulos1 {
+    margin-bottom: 20px;
+    margin-left: 15%;
+    font-size: 46px;
+
+}
+
+.titulos {
+    margin-bottom: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+
+
+
+.parrofos {
+    padding: 30px;
+}
+
+.contenedor-informacion-profesora {
+    margin: 39px;
+}
+
+.imagen-profesor {
+    margin-left: 5%;
+    width: 250px;
+    height: 150px;
+    border-radius: 100%;
+}
+
+.definicion-ariana {
+    color: #8e0168;
+    background-color: #000000;
+    border: #f3ff00 2px solid;
+    padding: 20px;
+    border-radius: 62px 20px;
+
+}
+
+
+.infor-curso {
+    margin: 10px;
+    font-family: math;
+    font-variant: small-caps;
+    font-size: 15px;
+}
+
+.infor-curso1 {
+    font-family: fantasy;
 }
 
 
@@ -547,7 +823,13 @@
 
 /*---------------------MAIN-----CONTACTO----------------------------------------------*/
 
+.fondocont{
+background-color: #ffb5eb69;
+background-image: url(../img/starfall-gif-5.gif.webp);
+width: 100%;
+height: 100%;
 
+}
 
 
 
@@ -768,133 +1050,3 @@ button {
 }
 
 /*-------------------------MAIN---------detalle cursao--------------------------------------*/
-
-.punto-medio {
-    display: flex;
-
-}
-
-.img-curso {
-
-    margin-right: 27px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    flex-direction: row;
-}
-
-.contenedor-img-inf-curso {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    align-content: stretch;
-    width: 30%;
-
-}
-
-.contenedor-detalles-importantes {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    margin: 47px;
-
-    flex-wrap: nowrap;
-}
-
-.TITULO-inf-cur {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 25px;
-    margin-bottom: 20px;
-
-}
-
-.TITULO-inf-cur-cla {
-
-    font-family: fantasy;
-    font-size: 20px;
-    font-style: oblique;
-    margin-bottom: 20px;
-}
-
-.parrafos {
-
-    margin-bottom: 20px;
-    color: #000000;
-    font-family: fantasy;
-    font-size: inherit;
-
-}
-
-.boton-confirmar {
-    background-color: pink;
-    margin-bottom: 30px;
-}
-
-.detalle-profesor {
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    background-image: url(/img/fondo.jpg);
-    margin-bottom: 67px
-
-}
-
-.titulos1 {
-    margin-bottom: 20px;
-    margin-left: 15%;
-    font-size: 46px;
-
-}
-
-.titulos {
-    margin-bottom: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 30px;
-}
-
-.estrellitas {
-    margin-bottom: 20px;
-}
-
-.parrofos {
-    padding: 30px;
-}
-
-.contenedor-informacion-profesora {
-    margin: 39px;
-}
-
-.imagen-profesor {
-    margin-left: 5%;
-    width: 250px;
-    height: 150px;
-    border-radius: 100%;
-}
-
-.definicion-ariana {
-    color: #8e0168;
-    background-color: #000000;
-    border: #f3ff00 2px solid;
-    padding: 20px;
-    border-radius: 62px 20px;
-
-}
-.boton-confirmar{
-    margin-top: 20px;
-}
-.infor-curso{
-    margin: 10px;
-    font-family: math;
-    font-variant: small-caps;
-    font-size: 15px;
-}
-.infor-curso1{
-    font-family: fantasy;
-}

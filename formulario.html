@@ -10,7 +10,7 @@
             max-width: 100%;
             height: auto;
         }
-        </style>
+    </style>
     <title>Cursos Estetica Canina</title>
     <link rel="stylesheet" href="css/estilo-todas-las-pag.css">
     <link rel="stylesheet" href="css/estilo-compuesto.css">
@@ -43,41 +43,73 @@
             <li class="idem"><a href="index-Estetica.html" target="_blank">INICIO</a></li>
             <li class="idem"><a href="giftCard.html" target="_blank">GIFTCARD</a></li>
             <li class="idem"><a href="calendario.html" target="_blank">CALENDARIO</a></li>
-          
+
             <li class="idem"><a href="contacto.html" target="_blank">CONTACTO</a></li>
         </ul>
     </nav>
-    <main>
-        <section>
-            <article class="contenedor-formulario">
-                <h2>Curso de peluqueria Canina Nivel 1 </h2>
-                <h3>Inscripción</h3>
-                <div class="contenedor-informacion">
-                    <div class="linea-formulario">
+    <main class="contenedor-formulario">
 
+        <h2 class="titulos">Peluqueria Canina nivel 1</h2>
+        <h3 class="subtit-formulafio">INSCRIPCIÓN</h3>
+
+
+
+
+        <form action="#" name="form" id="form"> <!--modifique esto-->
+
+            <div class="linea">
+                <div class="linea1">
+                    <label for="nombre" auto></label>
+                    <input class="casilla" type="text" name="nombre" id="nombre2" placeholder="Ingrese su nombre">
+
+                    <label for="apellido"></label>
+                    <input class="casilla" type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido">
+
+                    <label for="DNI"></label>
+                    <input class="casilla" type="number" name="dni" id="dni" placeholder="Ingrese su DNI">
+
+                    <label for="email"></label>
+                    <input class="casilla" type="email" name="email" id="email" placeholder="Ingrese su email">
+
+                    <label for="telefono"></label>
+                    <input class="casilla" type="number" name="telefono" id="telefono"
+                        placeholder="Ingrese un telefono">
+                    <div>
+                        <a class="signo-menos" href="" id="quitar-persona">
+                            <img class="img-sig-menos" src="img/aignoMenos.svg" alt="">
+                        </a>
                     </div>
 
-                    <div class="linea-formulario">
 
-                    </div>
-
-                    <div class="linea-formulario">
-
-                    </div>
                 </div>
 
-                <div class="linea-agregar-personas">
-                    <img class="tamañoCarrito" src="img/carrito +.svg" alt="">
-                    <h4>Agregar Persona</h4>
+                <div id="agregar-fila">
+                    <button class="signo-mas">
+                        <br>
+                        <a class="signo-mas" href="" id="agregar-persona">Agregar Persona
+                            <img class="img-sig-mas" src="img/signoMas.svg" alt="">
+                        </a>
+                    </button>
+
                 </div>
 
-                <div class="precio-boton">
-                    <p class="precio-formulario">$15000.-</p>
-                    <input type="submit" value="INSCRIBIRSE">
+
+                <div>
+                    <p class="precio-formulario">$2500,-</p>
                 </div>
-            </article>
-        </section>
+            </div>
+
+
+
+
+            <input id="boton-inscribirse" type="submit" value="Inscribirse">
+        </form>
+        <div id="mensajeerrorr" class="color-error">
+
+        </div>
+
     </main>
+    <script src="js/formulario.js"></script>
 
     <!-- ultima linea datos del grupo-->
     <footer>
