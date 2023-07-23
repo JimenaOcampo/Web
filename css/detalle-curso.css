@@ -1,0 +1,272 @@
+
+
+
+
+/*-----------------MAIN-----DETALLE CURSO--------------------------------------------------*/
+/* INFO CURSO*/
+.contenedor-inf {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: flex-start;
+    margin-bottom: 35px;
+}
+
+.contenedor-imagen {
+    /* display: flex;
+    align-items: center; */
+    height: 200px;
+    width: 200px;
+    margin: 25px 20px;
+}
+
+.contenedor-inscripcion {
+    margin-left: 40px;
+    margin-top: 25px;
+    display: table-footer-group;
+    width: 400px;
+
+}
+
+.img {
+    width: 100%;
+    /* margin: 15px; */
+    height: 100%;
+    border: 5px solid black;
+
+}
+
+
+
+.cuadrito {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+
+
+}
+
+
+.datos-curso {
+    font-size: 15px;
+    text-align: start;
+    padding-bottom: 15PX;
+
+}
+
+.titulo-dato-curso {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.letra-p-curso {
+    padding-top: 5px;
+}
+
+.lista-principal {
+    background-color: #c1dfd6;
+    font-size: 18px;
+    padding: 5px;
+    border: 1px solid black;
+    list-style: none;
+    display: inline-block;
+    width: 100%;
+}
+/*javascrip*/
+.d-none{
+    display: none;
+}
+.lista-contenidos {
+
+    background-color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    border: 1px solid rgb(205, 138, 186);
+    transform: scale(1)rotate(0deg) translate(0);
+    transition: transform 1s;
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    
+
+}
+
+.lista-contenidos:hover {
+    transform: scale(1.1) rotate(2deg) translate(3px, 0px);
+    background-color: rgb(248, 143, 178);
+}
+
+.video {
+    color: #ffffff;
+    font-style: initial;
+    display: block;
+    font-size: 20px;
+}
+
+.video:hover {
+    color: rgb(0, 0, 0);
+
+
+}
+
+.video p {
+    text-align: end;
+}
+
+.inscribirme {
+    font-size: 13px;
+    padding: 5PX;
+    border-radius: 3PX;
+
+}
+
+.seccion-contenido {
+    display: flex;
+    width: 87%;
+    margin-bottom: 12%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 92px;
+}
+
+
+.fondo-detalle {
+    background-color: #f1f1f1;
+}
+
+
+.ajolote {
+    width: 100%;
+    margin-left: 10%;
+    margin-top: 12%;
+
+}
+
+.punto-medio {
+    display: flex;
+
+}
+
+.img-curso {
+
+    margin-right: 27px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.contenedor-img-inf-curso {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: stretch;
+    width: 30%;
+
+}
+
+.contenedor-detalles-importantes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 47px;
+
+    flex-wrap: nowrap;
+}
+
+.TITULO-inf-cur {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    margin-bottom: 20px;
+
+}
+
+.TITULO-inf-cur-cla {
+
+    font-family: fantasy;
+    font-size: 20px;
+    font-style: oblique;
+    margin-bottom: 20px;
+}
+
+.parrafos {
+
+    margin-bottom: 20px;
+    color: #000000;
+    font-family: fantasy;
+    font-size: inherit;
+
+}
+
+
+
+.detalle-profesor {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/img/fondo.jpg);
+    margin-bottom: 67px
+}
+
+.titulos1 {
+    margin-bottom: 20px;
+    margin-left: 15%;
+    font-size: 46px;
+
+}
+
+.titulos {
+    margin-bottom: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+
+
+
+.parrofos {
+    padding: 30px;
+}
+
+.contenedor-informacion-profesora {
+    margin: 39px;
+}
+
+.imagen-profesor {
+    margin-left: 5%;
+    width: 250px;
+    height: 150px;
+    border-radius: 100%;
+}
+
+.definicion-ariana {
+    color: #8e0168;
+    background-color: #000000;
+    border: #f3ff00 2px solid;
+    padding: 20px;
+    border-radius: 62px 20px;
+
+}
+
+
+.infor-curso {
+    margin: 10px;
+    font-family: math;
+    font-variant: small-caps;
+    font-size: 15px;
+}
+
+.infor-curso1 {
+    font-family: fantasy;
+}
+
+

@@ -1,0 +1,155 @@
+
+
+
+
+
+/*-----------------MAIN---FORMULARIO----------------------------------------------------------------------------------------------------------*/
+.contenedor-formulario {
+
+    padding: 20px;
+    background-color: aliceblue;
+    margin: 30px;
+    border-radius: 2%;
+}
+
+.linea {
+    display: flex;
+    width: 100%;
+    padding-left: 10px;
+    margin-top: 5px;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+
+
+/*cuadros de  nombre apellido dni*/
+.npd {
+    width: 100%;
+    margin: 8px;
+
+}
+
+.casilla {
+
+    height: 30px;
+    border-radius: 15px;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.subtit-formulafio {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.precio-formulario {
+    display: inline;
+    background-color: #000;
+    color: #ffffff;
+    padding: 5px 10px;
+    margin: 0 8px;
+}
+
+.envio-formulario {
+    padding: 3px;
+}
+
+.agrega-campo {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.linea img {
+    width: 30px;
+   
+    margin: 8px;
+}
+.linea1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: space-between;
+
+}
+
+.agrega-campo img {
+    width: 30px;
+    margin: 8px;
+
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.signo-mas{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    margin-left: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #0000ff00;
+    border: none;
+}
+.img-sig-mas{
+    width: 10%;
+}
+.popup d-none{
+    background-color: grey;
+    width: 50%;
+    height: 300px;
+    text-align: center;
+    position: fixed;
+    z-index:2;
+    top:30px;
+    display:none;
+}
+.d-none{
+    display: none;
+}
+
+
+/*js formulario*/
+
+input[type="submit"]{
+    display: block;
+    float: right;
+    padding: 0.5em;
+    margin: 1em;
+}
+input.error{
+    border:1px solid crimson;
+}
+#mensaje{
+    margin-top: 2em;
+}
+#mostrar{
+    padding: 0.5em;
+}
+.oculto{
+    display: none;
+}
+.condiciones{
+    margin-top: 0.5em;
+}
+.color-error{
+    color: crimson;
+}
+#agregar-fila{
+
+}
+
+
+
+
+
+
+
