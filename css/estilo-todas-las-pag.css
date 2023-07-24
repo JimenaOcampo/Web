@@ -7,12 +7,13 @@
     cursor: url(../img/flecha.png), auto;
 }
 
-a {    
+a {
     text-decoration: none;
     cursor: url(../img/mano.png), auto;
-    
+
 }
-#botones{
+
+#botones {
     cursor: url(../img/mano.png), auto;
     font-size: 24px;
     background-color: aliceblue;
@@ -20,8 +21,16 @@ a {
     padding: 6px;
     border-radius: 11px;
 }
-input{
+
+input {
     cursor: url(../img/mano.png), auto;
+}
+
+#boton-curso-{
+
+    cursor: url(../img/mano.png), auto;
+
+
 }
 
 /*-------------------------------------------------------------------------*/
@@ -31,9 +40,9 @@ input{
 
 
 .contenedor-buscador {
-position: relative;
+    position: relative;
     width: 100%;
- 
+
 
 }
 
@@ -61,7 +70,7 @@ position: relative;
 .contenedor-imput {
     width: 100%;
     position: relative;
-   
+
 }
 
 .buscador-list {
@@ -129,7 +138,7 @@ position: relative;
 }
 
 .idem {
-  
+
     padding: 20px;
     list-style: none;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -148,7 +157,8 @@ position: relative;
 .datos {
     background-color: aliceblue;
 }
-.footerrrr{
+
+.footerrrr {
     display: flex;
     width: 100%;
     margin: 10px;
@@ -156,11 +166,11 @@ position: relative;
     padding: 16px;
     flex-wrap: nowrap;
     align-items: stretch;
-    
-}
-      
 
-.datos{
+}
+
+
+.datos {
     width: 100%;
     padding: 20px;
     color: chocolate;
@@ -169,6 +179,7 @@ position: relative;
     border-radius: 30px;
     position: relative;
 }
-.seccion-foter{
+
+.seccion-foter {
     width: 100%;
 }

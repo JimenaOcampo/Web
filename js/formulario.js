@@ -1,8 +1,23 @@
+
+
 let form = document.querySelector("#form");
 form.addEventListener("submit", (e) => {
     e.preventDefault();
     validar();
+
 });
+
+function redirigirModal() {
+
+    if (validar().error.value == false) {
+
+        abrirElModal();
+
+    };
+};
+
+
+/*--------------------------------------------------------------*/
 function validar() {
     let error = false;
     let mensajesError = "";
@@ -11,7 +26,7 @@ function validar() {
     let apellido = document.getElementById("apellido").value;
     let dni = document.getElementById("dni").value;
     let email = document.getElementById("email").value;
-
+    let mens = "";
 
     if (nombre == "") {
         error = true;
@@ -29,16 +44,67 @@ function validar() {
         error = true;
         mensajesError += "<p>El campo email es obligatorio</p>";
     }
-    if (error) {
+    if (error == true) {
         //mostrar los mensajes de error
         document.getElementById("mensajeerrorr").innerHTML = mensajesError;
     } else {
-        form.submit(); //envía el formulario si todo está ol
-        buenmensaje += "<p>MENSAJE ENVIADO</p>";
-        document.getElementById("mensajeerrorr").innerHTML = buenmensaje;
-    }
-}
 
+        form.submit(); //envía el formulario si todo está ol
+        buenmensaje += "<p>ESTA TODO CORRECTO</p>";
+        document.getElementById("mensajeerrorr").innerHTML = buenmensaje;
+
+        mens += "<p>VUELVA A ORPIMIR PARA CONFIRMAR INSCRIPCION</p>";
+        document.getElementById("mensajeclick").innerHTML = mens;
+
+        const abrirModal = document.querySelector('#boton-inscribirse');
+        const modal = document.querySelector('.modal');
+        const noModal = document.querySelector('.no-modal');
+        const cerrarModal = document.querySelector('.cerrar_modal');
+
+        abrirModal.addEventListener('click', (e) => {
+            e.preventDefault();
+            modal.classList.add('modal--show');
+        });
+
+
+        abrirModal.addEventListener("click", () => {
+            modal.classList("modal");
+            noModal.classList.toString("no-modal");
+            if (modal.value == "modal") {
+                modal.value = noModal;
+            } else {
+                modal.value = "modal";
+            };
+
+        });
+
+
+        cerrarModal.addEventListener('click', (e) => {
+            e.preventDefault();
+            modal.classList.remove('modal--show');
+        });
+
+
+
+
+
+    };
+};
+
+
+/*--------------------------------------------------------------*/
+
+
+
+
+
+/*--------------------------------------------------------------*/
+
+
+
+
+
+/*--------------------------------------------------------------*/
 
 
 
@@ -74,3 +140,6 @@ agregar.addEventListener(("click"), function (event) {
         });
     }
 });
+
+
+
