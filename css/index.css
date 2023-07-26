@@ -127,7 +127,7 @@ button {
 
 .duracion {
     margin: 1px;
-    font-size: x-small;
+    font-size: unset;
     font-family: initial;
     width: 100%;
     max-width: 100%;
@@ -181,7 +181,7 @@ button {
 .hh5 {
     display: inline-block;
     font-family: fantasy;
-    font-size: 18px;
+    font-size: 100%;
     width: 100%;
     max-width: 100%;
 

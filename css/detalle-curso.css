@@ -41,7 +41,8 @@
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    width: 100%;
+    width: 89%;
+    max-width: 100%;
     margin-top: 10px;
 
 
@@ -66,14 +67,19 @@
 }
 
 .lista-principal {
-    background-color: #c1dfd6;
-    font-size: 18px;
-    padding: 5px;
+    background-color: #f1ccec;
+    font-size: 100%;
     border: 1px solid black;
     list-style: none;
     display: inline-block;
-    width: 100%;
+    /* width: 99%; */
+    max-width: 100%;
+    /* text-align: center; */
+    font-family: cursive;
 }
+
+
+
 /*javascrip*/
 .d-none{
     display: none;
@@ -123,13 +129,13 @@
 
 .seccion-contenido {
     display: flex;
-    width: 87%;
+    width: 100%;
     margin-bottom: 12%;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    margin-left: 92px;
+  
 }
 
 
@@ -220,8 +226,12 @@
 
 .titulos1 {
     margin-bottom: 20px;
-    margin-left: 15%;
+    /* margin-left: 15%; */
     font-size: 46px;
+    background-color: brown;
+    width: 100%;
+    text-align: center;
+    color: aliceblue;
 
 }
 
