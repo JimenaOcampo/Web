@@ -145,12 +145,13 @@ max-width: 90%;
     margin-bottom: 20px;
 }
 .cont-ubi-total{
-    margin: 10px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    justify-content: center;
     align-items: stretch;
 }
 .giflindo{
-    margin: 80px;
+    margin: 30px;
+    padding: 17px;
+    width: 100%;
 }
