@@ -2,6 +2,7 @@
 /*--------------body----------------*/
 .fondito {
     background-color:rgb(147 102 242 / 19%);
+    width: 100%;
 }
 
 /*------------------------------*/
@@ -18,13 +19,12 @@
     height: auto;
     display: flex;
     flex-direction: row;
-    align-items: stretch;
     margin-top: 45px;
     margin-bottom: 190px;
     text-align: center;
     position: relative;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: space-between;
 
 }
 

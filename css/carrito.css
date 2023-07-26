@@ -1,0 +1,98 @@
+
+/*MODAL*/
+
+.modal {
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.637);
+    display: flex;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    overflow: auto;
+    transition: opacity .6s;
+    --transform: translatey(-100vh);
+    --transition: transform .8s;
+}
+
+/*creo una clase modificadora*/
+
+.modal--show {
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translatey(0);
+    --transition: transform .8s .8s;
+    z-index: 13;
+    position: fixed;
+
+}
+
+#modal_contenedor {
+    background-color: antiquewhite;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+    margin: 11%;
+    padding: 14px;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+    transform: var(--transform);
+    transition: var(--transition);
+    position: fixed;
+
+}
+
+.no-modal {
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.637);
+    display: flex;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    align-items: center;
+    overflow: auto;
+    transition: opacity .6s;
+    --transform: translatey(-100vh);
+    --transition: transform .8s;
+}
+
+.modal_titulo {
+    font-size: 2em;
+    text-align: center;
+    font-family: fantasy;
+}
+
+.modal_img {
+    width: 98%;
+    max-width: 170px;
+}
+
+.cerrar_modal {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: rgb(124, 9, 78);
+    padding: 1em 3em;
+    border: 1px solid;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 300;
+    transition: background-color.3s;
+
+}
+
+.cerrar_modal:hover {
+    color: rgb(62, 0, 121);
+    background-color: rgb(242, 223, 255);
+
+}
+
+.d-none {
+    display: none;
+}

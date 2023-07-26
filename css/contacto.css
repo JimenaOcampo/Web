@@ -1,11 +1,156 @@
-
 /*---------------------MAIN-----CONTACTO----------------------------------------------*/
 
-.fondocont{
+.fondocont {
     background-color: #ffb5eb69;
     background-image: url(../img/starfall-gif-5.gif.webp);
     width: 100%;
     height: 100%;
-    
-    }
-    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    /* align-content: space-between; */
+    justify-content: center;
+}
+
+.conjunto {
+
+max-width: 90%;
+    position: relative;
+}
+
+.contenedor-contacto-datosContacto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    align-content: space-between;
+    max-width: 100%;
+}
+
+.cont- {
+    color: aliceblue;
+    font-family: cursive;
+    text-align: center;
+    font-size: 200%;
+}
+
+.cont-for {
+    margin: 24px;
+    background-color: #feefffa3;
+    padding: 20px;
+    border-radius: 19px;
+    position: relative;
+}
+
+.contenedor-imputs-formularios {
+    display: flex;
+    align-content: space-around;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+}
+
+#nombreyapellido { 
+    max-width: 80%;
+    margin-bottom: 12px;
+    font-size: 22px;
+}
+
+#eMail {
+    max-width: 80%;
+    margin-bottom: 12px;
+    font-size: 22px;
+}
+
+#telefono- {
+    max-width: 80%;
+    margin-bottom: 12px;
+    font-size: 22px;
+}
+
+#consulta {
+    max-width: 80%;
+    margin-bottom: 12px;
+    font-size: 22px;
+}
+#enviar-con{
+    width: 20%;
+}
+
+#mensajeerrorr {}
+
+#mensajeclick {}
+
+.contenedor-datos-contacto {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: flex-start;
+    background-color: #f9e9ffbf;
+    padding: 20px;
+    border-radius: 42px;
+}
+.connnn1{
+    margin: 13px;
+    font-style: italic;
+    font-family: fantasy;
+    font-size: 33px;
+    width: 100%;
+    text-align: center;
+}
+.connnn2{
+    margin: 13px;
+    font-style: italic;
+    font-family: cursive;
+    font-size: 19px;
+    width: 100%;
+}
+.connnn3{
+    margin: 13px;
+    font-style: italic;
+    font-family: emoji;
+    font-size: 24px;
+    width: 100%;
+}
+.connnn4{
+    margin: 13px;
+    font-style: italic;
+    font-family: emoji;
+    font-size: 24px;
+    width: 100%;
+}
+
+
+
+.contenedor-ubicacion {
+    background-color: #e2c5ffd9;
+    border-radius: 26px 26px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 350px;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    margin-top: 48px;
+    font-size: 39px;
+
+}
+.tamaño-ubicacion{
+    margin-bottom: 20px;
+}
+.cont-ubi-total{
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+.giflindo{
+    margin: 80px;
+}

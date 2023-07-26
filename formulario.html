@@ -14,9 +14,22 @@
     <title>Cursos Estetica Canina</title>
     <link rel="stylesheet" href="css/estilo-todas-las-pag.css">
     <link rel="stylesheet" href="css/formulario.css">
+         <!--carrito-->
+         <link rel="stylesheet" href="css/carrito.css">
 </head>
 
 <body>
+      <!--CREAR EL MODAL carro-->
+      <section class="modal" id="modal-cursos">
+        <div id="modal_contenedor" class="d-none">
+            <img src="img/modal.svg" class="modal_img" alt="">
+            <h2 class="modal_titulo">¡¡Gracias por confiar en nosotros!!</h2>
+            <p class="cursosComprados_modal"></p>
+            <a href="#" class="cerrar_modal"> Cerrar </a>
+        </div>
+    
+    </section> 
+
     <!--CREAR EL MODAL-->
     <section class="modal" id="modal-cursos">
         <div id="modal_contenedor" class="d-none">
@@ -31,7 +44,7 @@
                     <p></p>
                     <a class="ensale" href="index-Estetica.html">Aceptar</a>
                 </button>
-                <button class="cerrar_modal"><a href="#">Rechazar </a></button>
+            
 
 
             </div>
@@ -133,6 +146,7 @@
         <div id="mensajeclick" class="colorclick"></div>
     </main>
     <script src="js/formulario.js"></script>
+    <script src="js/index.js"></script>
 
     <!-- ultima linea datos del grupo-->
     <footer>

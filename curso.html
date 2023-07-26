@@ -16,9 +16,21 @@
     <link rel="stylesheet" href="css/detalle-curso.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/estrellas.css">
+      <!--carrito-->
+      <link rel="stylesheet" href="css/carrito.css">
 </head>
 
 <body class="fondo-detalle">
+          <!--CREAR EL MODAL carro-->
+          <section class="modal" id="modal-cursos">
+            <div id="modal_contenedor" class="d-none">
+                <img src="img/modal.svg" class="modal_img" alt="">
+                <h2 class="modal_titulo">¡¡Gracias por confiar en nosotros!!</h2>
+                <p class="cursosComprados_modal"></p>
+                <a href="#" class="cerrar_modal"> Cerrar </a>
+            </div>
+        
+        </section> 
     <!--primeralinea logo carro-->
     <header class="contenedor-buscador">
         <article class="contenedor-log-bu-ca">
@@ -120,10 +132,10 @@
         <section class="seccion-contenido">
             <div class="contenedor-contenido-pc">
 
-                <div>
+             
                     <h2 class="TITULO-inf-cur-cla">CONTENIDOS POR CLASE</h2>
                     <nav class="cuadrito">
-                        <ul>
+                    
 
 
 
@@ -162,7 +174,7 @@
                                         <img src="img/mano.png" alt="">
                                     </p>
                                 </li>
-                            </ul>
+                          </ul>
 
 
 
@@ -208,12 +220,12 @@
 
 
 
-                        </ul>
+                      
 
 
 
                     </nav>
-                </div>
+               
             </div>
 
             <div>
@@ -280,6 +292,7 @@
         </section>
 
     </main>
+    <script src="js/index.js"></script>
     <aside>
         <!--recomendaciones-->
         <div class="contenedor-cuadrito-curso">

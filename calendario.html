@@ -14,14 +14,28 @@
     <title>Cursos Estetica Canina</title>
     <link rel="stylesheet" href="css/estilo-todas-las-pag.css">
     <link rel="stylesheet" href="css/calendario.css">
+         <!--carrito-->
+        <link rel="stylesheet" href="css/carrito.css">
     <link href='fullcalendar/core/main.css' rel='stylesheet' />
     <link href='fullcalendar/daygrid/main.css' rel='stylesheet' />
     <script src='fullcalendar/core/main.js'></script>
     <script src='fullcalendar/daygrid/main.js'></script>
     <script src="js/calendario.js"></script>
+
+   
 </head>
 
 <body>
+        <!--CREAR EL MODAL carro-->
+        <section class="modal" id="modal-cursos">
+            <div id="modal_contenedor" class="d-none">
+                <img src="img/modal.svg" class="modal_img" alt="">
+                <h2 class="modal_titulo">¡¡Gracias por confiar en nosotros!!</h2>
+                <p class="cursosComprados_modal"></p>
+                <a href="#" class="cerrar_modal"> Cerrar </a>
+            </div>
+            </section>
+    
     <!--primeralinea logo carro-->
     <header class="contenedor-buscador">
         <article class="contenedor-log-bu-ca">
@@ -59,6 +73,7 @@
         </section>
         
     </main>
+      <script src="js/index.js"></script>
     <!-- ultima linea datos del grupo-->
     <footer>
         <section class="seccion-foter">
