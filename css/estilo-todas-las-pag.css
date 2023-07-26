@@ -135,6 +135,7 @@ input {
     flex-direction: row;
     flex-wrap: wrap;
     align-content: stretch;
+    font-size: 35px;
 }
 
 .idem {
